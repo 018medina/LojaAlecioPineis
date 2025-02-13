@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- PARA FUNCIONAMENTO DE ÍCONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Loja Alécio Pineis</title>
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="scroll.js" type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main>
+      <header id="header">
+        <a class="aHover" style="text-align: center" id="logo" href="#"
+          ><img class="imgLogo" src="./img/LojaAlecio.png"
+        /></a>
+        <nav id="nav">
+          <button id="btn-mobile">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu">
+            <li>
+              <a href="#SecAreasAtuacao" onclick="auxToggleMenu()">Sobre nós</a>
+            </li>
+            <li>
+              <a href="#SecDiferenciais" onclick="auxToggleMenu()">Artigos</a>
+            </li>
+            <li>
+              <a href="#SecFiquePorDentro" onclick="auxToggleMenu()">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="SecHome" class="identacaoPadrao">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="imgCarousel"
+                src="./img/Slide1.JPG"
+                alt="First slide"
+              />
+            </div>
+            <!-- <div class="carousel-item">
+              <img
+                class="imgCarousel"
+                src="./img/Slide2.jpeg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="imgCarousel"
+                src="./img/Slide3.jpeg"
+                alt="Third slide"
+              />
+            </div> -->
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section
+        id="SecDefinicao"
+        style="padding-top: 50px; padding-bottom: 50px"
+      >
+        <div class="identaPad">
+          <div class="flexCenter flexColumn">
+            <h2 class="tituloH2 flexCenter txtAzul">O que é Maçonaria?</h2>
+            <p class="maxWdth" style="text-align: justify">
+              A Maçonaria é uma fraternidade que estimula o autoconhecimento e
+              valores éticos, unindo homens comprometidos com o crescimento
+              pessoal e a contribuição social. Valoriza o companheirismo, a
+              amizade e a solidariedade, buscando impactar positivamente a
+              sociedade com ações e princípios morais.
+            </p>
+          </div>
+
+          <div
+            class="flexCenter"
+            style="padding-top: 50px; justify-content: space-evenly !important"
+          >
+            <div class="flexCenter flexColumn tamCard">
+              <i class="iconsImport fa-regular fa-handshake"></i>
+              <h3 class="txtJust txtAzul">Amor fraternal</h3>
+              <p class="txtJust">
+                A Maçonaria fundamenta-se nesse princípio, incentivando sua
+                compreensão, prática e integração como uma das leis fundamentais
+                da nossa existência e um de seus principais pilares.
+              </p>
+            </div>
+            <div class="flexCenter flexColumn tamCard">
+              <i class="iconsImport fa-regular fa-heart"></i>
+              <h3 class="txtJust txtAzul">Amparo</h3>
+              <p class="txtJust">
+                Buscamos crescer como indivíduos e irmãos, expressando nosso
+                amor pelo próximo através de boas ações, que também promovem
+                nosso auto aperfeiçoamento.
+              </p>
+            </div>
+            <div class="flexCenter flexColumn tamCard">
+              <i class="iconsImport fa-solid fa-book-bible"></i>
+              <h3 class="txtJust txtAzul">Verdade</h3>
+              <p class="txtJust">
+                A sabedoria é um precursor da excelência. Compartilhamos
+                abertamente ideias para adquirir o conhecimento que precisamos
+                para sermos melhores cidadãos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="SecAlecioPineis"
+        style="padding-top: 50px; padding-bottom: 50px"
+      >
+        <img src="./img/backgroundAlecio.png" alt="" />
+      </section>
+
+      <section id="SecDescricaoAlecio" style="padding-bottom: 50px">
+        <div class="identaPad">
+          <h2 class="tituloH2 flexCenter txtAzul">Quem foi Alécio Pineis?</h2>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+            "
+          >
+            <p class="tamCard txtJust">
+              Foi maçom, iniciado há mais de 40 anos na Loja Maçônica Recanto
+              Hospitaleiro, na cidade de Paranaíba/MS, e era membro das lojas
+              maçônicas Tupy e Unitas, de Araçatuba.
+            </p>
+            <p class="tamCard txtJust">
+              Por seu tempo dedicado à Ordem, recebeu do Grande Oriente do
+              Brasil o título de Maçom Remido. Na hierarquia filosófica da
+              Maçonaria alcançou a posição máxima, o Grau 33, pela dedicação aos
+              estudos maçônicos.
+            </p>
+            <p class="tamCard txtJust">
+              Possuía um grande carisma com jovens e crianças, e dedicou sua
+              vida a eles. Nos idos de 2010, assumiu a presidência do Conselho
+              Consultivo do Capítulo Mocidade Araçatubense nº 87 da Ordem
+              DeMolay para o Brasil, um dos mais antigos do país.
+            </p>
+            <p class="tamCard txtJust">
+              Sob a sua liderança, o Capítulo Mocidade Araçatubense figurou
+              entre os maiores em quantidade de membros ativos, uma referência
+              nacional na Ordem DeMolay. Conquistou inúmeras premiações nas
+              competições nacionais.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer style="background-color: #e6e6e6">
+      <div class="ajustaRodape">
+        <div>
+          <p class="txtVinho" style="text-align: center">
+            © Adriéle Novaes. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div>
+          <p>
+            <a
+              class="ajustaRodape"
+              style="text-decoration: none; gap: 20px"
+              href="https://fabiomedina.com.br/"
+              target="_blank"
+              >Desenvolvido por: Fábio Medina
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>
