@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -37,7 +43,6 @@ footer {
 
 header ul li a,
 footer ul li a {
-  /* color: var(--azulIdentidade); */
   color: white;
   text-decoration: none;
   list-style: none;
@@ -105,7 +110,6 @@ img {
 }
 
 a {
-  color: var(--azulIdentidade);
   text-decoration: none;
   padding: 5px;
 }
@@ -115,12 +119,32 @@ header a {
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  /* background: rgba(0, 0, 0, 0.05); */
   border-radius: 6px;
+  color: whitesmoke !important;
 }
 
 .aHover {
   background: transparent !important;
+}
+
+.aLinksCorpoSite {
+  color: #007bff !important;
+}
+
+.aLinksCorpoSite:hover {
+  color: #007bff !important;
+  text-decoration: underline !important;
+  background-color: transparent !important;
+}
+
+.aLinksFooter {
+  color: white !important;
+}
+
+.aLinksFooter:hover {
+  color: white !important;
+  background-color: transparent !important;
 }
 
 .pad42 {
@@ -144,6 +168,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.flexStart {
+  display: flex;
+  align-items: start;
+  gap: 35px;
+  flex-wrap: wrap;
 }
 
 .txtCenter {
@@ -184,10 +217,6 @@ a:hover {
   transition: transform 0.3s;
 }
 
-.whatsapp-button a img:hover {
-  transform: scale(1.1);
-}
-
 .identaServicos {
   gap: 30px;
   flex-wrap: wrap;
@@ -214,7 +243,7 @@ a:hover {
 
 #btn-mobile {
   display: none;
-  background: #e6e6e6;
+  background: var(--azulIdentidade);
 }
 
 #header {
@@ -236,23 +265,6 @@ a:hover {
 #menu a {
   display: block;
   padding: 0.5rem;
-}
-
-.entreContato {
-  color: white;
-  background-color: var(--azulIdentidade);
-  background-color: #4dcd5c;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  padding: 8px;
-  border-radius: 6px;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0.1px;
-}
-
-.entreContato:hover {
-  background-color: #78bd80;
 }
 
 .shape {
@@ -279,10 +291,6 @@ a:hover {
   transition: transform 0.3s ease;
 }
 
-.cardT:hover {
-  transform: scale(1.05);
-}
-
 .descricaoAreas {
   width: 245px;
   height: 130px;
@@ -295,15 +303,6 @@ a:hover {
   border-radius: 5px;
   font-size: 14px;
   transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-}
-
-.cardT:hover .descricaoAreas {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease, visibility 0s linear 0s;
-  align-items: start;
-  justify-content: start;
-  flex-wrap: wrap;
 }
 
 .carousel-item {
@@ -344,6 +343,14 @@ a:hover {
   max-width: 350px;
 }
 
+.padTop {
+  padding-top: 20px;
+}
+
+.padBottom {
+  padding-bottom: 50px;
+}
+
 @media (max-width: 1550px) {
   /* img {
     width: 100%;
@@ -378,13 +385,6 @@ a:hover {
     font-size: 1em;
   }
 
-  /* img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-  } */
-
   h2 {
     font-size: 2.5em;
   }
@@ -403,13 +403,6 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
-  /* img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-  } */
-
   h2 {
     font-size: 2.3em;
   }
@@ -428,6 +421,14 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   section {
     flex-direction: column;
     text-align: center;
@@ -474,6 +475,12 @@ a:hover {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: var(--azulIdentidade);
+  }
+
+  #menu a:hover {
+    border-radius: 6px;
+    color: var(--azulIdentidade) !important;
   }
 
   #btn-mobile {
@@ -549,7 +556,11 @@ a:hover {
   }
 
   .padBottom {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  .padTop {
+    padding-top: 20px;
   }
 
   .margBottom {
