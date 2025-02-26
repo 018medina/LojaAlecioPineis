@@ -67,13 +67,6 @@ section {
   height: auto;
 }
 
-h2 {
-  font-size: 4em;
-  margin: 0.5em 0;
-  text-align: center;
-  font-weight: 700;
-}
-
 .tituloH2 {
   font-size: 2.5em;
   margin: 0.5em 0;
@@ -93,13 +86,12 @@ p {
 
 img {
   width: 100%;
-  /* max-width: 400px; */
   height: auto;
   border-radius: 10px;
 }
 
 .imgLogo {
-  width: 200px;
+  width: 400px;
 }
 
 .imgCarousel {
@@ -243,7 +235,7 @@ a:hover {
 
 #btn-mobile {
   display: none;
-  background: var(--azulIdentidade);
+  /* background: var(--azulIdentidade); */
 }
 
 #header {
@@ -351,7 +343,7 @@ a:hover {
 }
 
 .padTop {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .padBottom {
@@ -373,7 +365,7 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 250px; /* Ajuste para aumentar/diminuir o efeito */
+  height: 350px; /* Ajuste para aumentar/diminuir o efeito */
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.7) 20%,
@@ -408,24 +400,32 @@ a:hover {
   padding-top: 20px; /* Ajusta a posição do texto */
 }
 
+.squada-one-regular {
+  font-family: "Squada One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.imgInsta {
+  max-width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgInsta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  /* transform: translateY(-10px) scale(1.05); */
+  cursor: pointer;
+}
+
 @media (max-width: 1550px) {
-  /* img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-  } */
-
-  h2 {
-    font-size: 2.8em;
-  }
-
   .tituloH2 {
-    font-size: 1.8em;
+    font-size: 2.2em !important;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
 
   .shape {
@@ -438,20 +438,12 @@ a:hover {
 }
 
 @media (max-width: 1350px) {
-  header a {
-    font-size: 1em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
   .tituloH2 {
-    font-size: 1.5em;
+    font-size: 2em !important;
   }
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.3em !important;
   }
 
   .ajustaTextoPrincipal {
@@ -460,12 +452,12 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
-  h2 {
-    font-size: 2.3em;
+  .tituloH2 {
+    font-size: 1.3em !important;
   }
 
-  .tituloH2 {
-    font-size: 1.3em;
+  h3 {
+    font-size: 1.1em !important;
   }
 
   .ajustaTextoPrincipal {
@@ -523,7 +515,8 @@ a:hover {
   }
 
   #nav.active #menu {
-    height: 100%;
+    /* height: 100%; */
+    height: 100vh;
     visibility: visible;
     overflow-y: auto;
   }
@@ -547,6 +540,7 @@ a:hover {
     border: none;
     cursor: pointer;
     gap: 0.5rem;
+    border-radius: 8px;
   }
 
   #hamburger {
@@ -600,14 +594,6 @@ a:hover {
     margin-top: 35px !important;
   }
 
-  h2 {
-    margin: 0.8em 0;
-  }
-
-  .tituloH2 {
-    font-size: 1.8em;
-  }
-
   .textoCel {
     color: var(--azulIdentidade);
   }
@@ -626,5 +612,21 @@ a:hover {
 
   .textoChecks {
     text-align: start;
+  }
+
+  .imgLogo {
+    width: 300px;
+  }
+
+  #header {
+    justify-content: end;
+  }
+
+  .imgInsta {
+    max-width: 200px;
+  }
+
+  header a {
+    font-size: 1em;
   }
 }
