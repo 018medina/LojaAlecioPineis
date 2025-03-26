@@ -31,6 +31,9 @@ body {
   font-style: normal;
   --azulIdentidadeOld: #1a3566;
   --azulIdentidade: #2d4c9c;
+  background-image: url("./img/fundoBrancoSiteS.png");
+  background-size: cover;
+  background-position: center;
 }
 
 header,
