@@ -1,32 +1,32 @@
-$(document).ready(function () {
-
+window.onload = function () {
     ScrollReveal({ reset: true });
 
     animaDireita();
     animaEsquerda();
     animaAparecer();
-});
+}
 
 function animaDireita() {
     ScrollReveal().reveal('.animaDireita', {
         origin: 'right',
-        duration: 2000,
-        distance: '100px'
-    })
+        duration: 1500,
+        distance: '100px',
+        easing: 'ease-in'
+    });
 }
 
 function animaEsquerda() {
     ScrollReveal().reveal('.animaEsquerda', {
         origin: 'left',
-        duration: 2000,
-        distance: '100px'
-    })
+        duration: 1500,
+        distance: '100px',
+        easing: 'ease-in'
+    });
 }
 
 function animaAparecer() {
     ScrollReveal().reveal('.animaAparecer', {
-        duration: 1000, // Tempo da animação
-        opacity: 0, // Garante transição de opacidade
-        easing: 'ease-in-out' // Suaviza a transição
-    })
+        duration: 1500,
+        easing: 'ease-in'
+    });
 }
