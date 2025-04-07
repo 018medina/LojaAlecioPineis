@@ -85,9 +85,39 @@
       opacity: 0.98;
     }
 
+    #SecFundacao {
+      background-image: url(../img/fundacaoAgape.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-size: contain; */
+      height: 410px;
+      height: 722px;
+      position: relative;
+      opacity: 0.98;
+    }
+
+    #SecFundacaoLoja {
+      background-image: url(../img/fundacaoLoja.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-size: contain; */
+      height: 410px;
+      height: 722px;
+      position: relative;
+      opacity: 0.98;
+    }
+
     @media (max-width: 768px) {
       #SecRitoYork {
         height: 135px;
+      }
+      #SecFundacao {
+        height: 150px;
+      }
+      #SecFundacaoLoja {
+        height: 150px;
       }
     }
   </style>
@@ -233,14 +263,96 @@
         </div>
       </section>
 
-      <section id="SecRitoYork" class="identacaoPadrao" style="width: 100%">
-        <!-- <div class="overlay-top"></div>
-        <div class="overlay">
-          <h2 style="color: white" class="tituloH2 flexCenter animaEsquerda">
-            Rito de York
-          </h2>
-        </div> -->
+      <section
+        id="SecFundacao"
+        class="identacaoPadrao"
+        style="width: 100%"
+      ></section>
+
+      <section id="SecDescricaoFundacao" class="padBottom padTop">
+        <div class="identaPad animaAparecer">
+          <h2 class="tituloH2 flexCenter txtAzul">História de Fundação</h2>
+          <div class="flexStart" style="justify-content: center !important">
+            <!-- primeiro bloco -->
+            <div>
+              <div>
+                <p class="tamCard650 txtJust">
+                  A história da Alécio Pineis foi construída a partir do dia 12
+                  de Outubro de 2022. Essa foto retrata a comemoração na taverna
+                  Vilarejo Vó Nefa logo após a fundação. Foi ali que nossos
+                  alicerces foram lançados, dando início a uma jornada repleta
+                  de significado.
+                </p>
+              </div>
+
+              <div>
+                <p class="tamCard650 txtJust">
+                  No dia 12 de novembro de 2022, realizamos a Primeira Sessão
+                  Ordinária da ARLS Alécio Pineis Nº 7065, no oriente de
+                  Araçatuba. A cerimônia foi realizada no Templo da ARLS
+                  Liberdade e Justiça Nº 2874, em Birigui.
+                </p>
+                <p class="tamCard650 txtJust">
+                  Sob a liderança do Venerável Mestre Provisório, Marcus
+                  Alexandre Pinese, e com o auxílio do 1º Vigilante Provisório,
+                  Andre Yukio Dias Honma, e do 2º Vigilante Provisório, Almir
+                  Pinezi, consolidamos nossos laços e fortalecemos nosso
+                  propósito.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <section
+        id="SecFundacaoLoja"
+        class="identacaoPadrao"
+        style="width: 100%"
+      ></section>
+
+      <section id="SecDescricaoFundacao" class="padBottom padTop">
+        <div class="identaPad animaAparecer">
+          <!-- <h2 class="tituloH2 flexCenter txtAzul">História de Fundação</h2> -->
+          <div class="flexStart" style="justify-content: center !important">
+            <!-- primeiro bloco -->
+            <div>
+              <div>
+                <p class="tamCard650 txtJust">
+                  No sábado, dia 17, uma Comissão Especial presidida pelo Irmão
+                  José Luiz Jacomelli, Mestre Instalado da ARLS Álvaro Gomes dos
+                  Santos nº 7020, juntamente com os Irmãos Clovis Eduardo
+                  Ruperes Teruel e Marcos Rogério Lemes, Mestres Instalados da
+                  ARLS Unitas nº 1668, e o ilustre Roberto Alves, Venerável
+                  Mestre da ARLS Unitas nº 1668, conduziu a Sessão de
+                  Regularização da ARLS Alécio Pineis nº 7065, seguindo os
+                  preceitos do Rito de York.
+                </p>
+              </div>
+
+              <div>
+                <p class="tamCard650 txtJust">
+                  Na tarde de sábado, dia 29 de abril de 2023, vivemos um
+                  momento histórico durante a Sessão Magna de Iniciação. Uma
+                  cerimônia repleta de emoção, onde os irmãos presentes puderam
+                  relembrar os momentos marcantes da trajetória do valoroso
+                  Irmão Alécio Pineis, tanto dentro como fora do universo
+                  maçônico. Nossos corações se encheram de gratidão e
+                  unanimemente reconhecemos que o legado de Alécio permanecerá
+                  para sempre, ecoando nos corações de todos os membros,
+                  familiares e amigos desta amada Loja.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="SecRitoYork"
+        class="identacaoPadrao"
+        style="width: 100%"
+      ></section>
 
       <section id="SecDescricaoRitoYork" class="padBottom padTop">
         <div class="identaPad animaAparecer">
@@ -360,6 +472,35 @@
         </div>
       </section>
     </main>
+
+    <footer style="background-color: #2d4c9c">
+      <div class="ajustaRodape">
+        <div>
+          <p
+            style="
+              text-align: center;
+              margin: 0;
+              color: white;
+              font-size: 0.8em;
+            "
+          >
+            © Loja Alécio Pineis. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0; font-size: 0.8em">
+            <a
+              class="ajustaRodape aLinksFooter"
+              style="text-decoration: none; gap: 20px"
+              href="https://fabiomedina.com.br/"
+              target="_blank"
+              >Desenvolvido por: Fábio Medina
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="../script.js" type="text/javascript"></script>
     <script src="../scroll.js" type="text/javascript"></script>
