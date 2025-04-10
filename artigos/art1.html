@@ -73,13 +73,6 @@
       padding: 0;
     }
 
-    p,
-    a {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      word-break: break-word;
-    }
-
     #SecHome {
       background-image: url(../img/graus.jpg);
       background-position: center center;
@@ -90,7 +83,14 @@
       opacity: 0.98;
     }
 
+    .tamCard {
+      max-width: 1000px;
+    }
+
     @media (max-width: 768px) {
+      .tamCard {
+        max-width: 350px;
+      }
     }
   </style>
 
