@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <title>Contato - Loja Alécio Pineis nº7065 - Rito de York</title>
+    <title>Quero ser Maçom - Loja Alécio Pineis nº7065 - Rito de York</title>
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +31,8 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/imask"></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -97,8 +99,8 @@
     }
 
     .btnSubmit {
-      width: 100%;
-      padding: 10px;
+      /* width: 100%; */
+      /* padding: 10px; */
       background: #2d4c9c;
       color: white;
       border: none;
@@ -111,9 +113,11 @@
     }
   </style>
 
+  <script></script>
+
   <body>
     <main>
-      <header id="header">
+      <header id="header" style="background-color: #2d4c9c">
         <nav id="nav">
           <button id="btn-mobile">
             <span id="hamburger"></span>
@@ -136,8 +140,239 @@
         </nav>
       </header>
 
-      <section id="SecHome" class="identacaoPadrao" style="width: 100%">
-        <div class="overlay-top"></div>
+      <!-- <section id="Form1" class="identacaoPadrao" style="width: 100%">
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">
+              Quer se tornar um Maçom?
+            </h2>
+            <p
+              style="text-align: justify; margin-top: 40px; margin-bottom: 40px"
+            >
+              Para se tornar membro da Maçonaria, o interessado deve
+              primeiramente refletir sobre seus valores, comportamentos e
+              compatibilidade com os princípios maçônicos.
+            </p>
+            <div style="display: flex; justify-content: end">
+              <button class="btnSubmit" onclick="proximo(1)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section
+        id="Form2"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div
+          id="contactForm"
+          style="position: absolute; top: 15%; left: 0; width: 100%"
+        >
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">Termos e Condições</h2>
+            <p
+              style="text-align: justify; margin-top: 40px; margin-bottom: 40px"
+            >
+              Ao preencher esse formulário e enviar seus dados, você concorda
+              com a política de privacidade do site e consente com o tratamento
+              de seus dados pessoais para fins exclusivamente cadastrais,
+              análise de perfil, seleção e habilitação junto a instituição.
+            </p>
+            <p
+              style="text-align: justify; margin-top: 40px; margin-bottom: 40px"
+            >
+              Seus dados permanecerão armazenados o tempo suficiente para a
+              finalidade acima descrita, podendo ser compartilhada ou não com
+              outras lojas maçônicas, seguindo protocolos de segurança da
+              informação e para o mesmo fim.
+            </p>
+            <p
+              style="text-align: justify; margin-top: 40px; margin-bottom: 40px"
+            >
+              O preenchimento deste formulário também não garante ingresso na
+              ordem, bem como contato para prosseguimento do processo. Seu
+              cadastro será analisado pela Loja seguindo as práticas e costumes
+              do Grande Oriente de São Paulo e da tradição maçônica.
+            </p>
+
+            <label
+              style="
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 40px;
+              "
+            >
+              <input
+                id="chkTermos"
+                style="max-width: 30px"
+                type="checkbox"
+                name="chkTermos"
+                value="sim"
+              />
+              <span style="text-align: start"
+                >Eu concordo com os Termos e Condições</span
+              >
+            </label>
+
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anterior(2)">Anterior</button>
+              <button class="btnSubmit" onclick="proximo(2)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section
+        id="Form3"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">Dados Pessoais</h2>
+
+            <input type="text" id="name" placeholder="Nome Completo" required />
+            <input
+              type="tel"
+              id="whatsapp"
+              placeholder="Telefone (00) 00000-0000"
+              required
+            />
+            <input
+              type="text"
+              id="cidadeEstado"
+              placeholder="Cidade e Estado"
+              required
+            />
+            <label style="display: flex; align-items: center; gap: 8px">
+              <input
+                id="chkIdade"
+                style="max-width: 30px"
+                type="checkbox"
+                name="chkIdade"
+              />
+              <span style="text-align: start">Tenho mais de dezoito anos</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px">
+              <input
+                id="chkEnsino"
+                style="max-width: 30px"
+                type="checkbox"
+                name="chkEnsino"
+              />
+              <span style="text-align: start"
+                >Possuo instrução de ensino médio completo ou equivalente</span
+              >
+            </label>
+            <label style="display: flex; align-items: center; gap: 8px">
+              <input
+                id="chkEstabilidade"
+                style="max-width: 30px"
+                type="checkbox"
+                name="chkEstabilidade"
+              />
+              <span style="text-align: start"
+                >Possui estabilidade de emprego e residência na região de
+                interesse?</span
+              >
+            </label>
+            <input
+              style="margin-bottom: 40px"
+              type="text"
+              id="profissao"
+              placeholder="Profissão"
+              required
+            />
+
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anterior(3)">Anterior</button>
+              <button class="btnSubmit" onclick="proximo(3)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section
+        id="Form4"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">Disponibilidade</h2>
+
+            <div class="txtStart">
+              <span>Qual sua opinião sobre a Maçonaria?</span>
+              <textarea name="opiniaoSobre" id="opiniaoSobre"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Qual a opinião de seus familiares (Ex.: cônjuge, filhos e pais)
+                sobre a Maçonaria?</span
+              >
+              <textarea name="opiniaoFamilia" id="opiniaoFamilia"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Você tem disponibilidade para participar das reuniões
+                presenciais nos segundos e quartos sábados do mês às 15h?</span
+              >
+              <br />
+              <label class="radioBtn">
+                <input type="radio" name="dispReuniao" value="1" /> Sim
+              </label>
+              <label class="radioBtn">
+                <input type="radio" name="dispReuniao" value="0" /> Não
+              </label>
+            </div>
+
+            <div class="txtStart" style="margin-top: 16px">
+              <span
+                >Você pode participar das reuniões virtuais nas primeiras e
+                terceiras quintas-feiras do mês às 20h?</span
+              >
+              <br />
+              <label class="radioBtn">
+                <input type="radio" name="dispVirtual" value="1" /> Sim
+              </label>
+              <label class="radioBtn">
+                <input type="radio" name="dispVirtual" value="0" /> Não
+              </label>
+            </div>
+
+            <div class="txtStart" style="margin-top: 16px">
+              <span
+                >Você está disposto a estudar sobre a Maçonaria e se dedicar ao
+                seu crescimento pessoal?</span
+              >
+              <br />
+              <label class="radioBtn">
+                <input type="radio" name="dispEstudos" value="1" /> Sim
+              </label>
+              <label class="radioBtn">
+                <input type="radio" name="dispEstudos" value="0" /> Não
+              </label>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+              "
+            >
+              <button class="btnSubmit" onclick="anterior(4)">Anterior</button>
+              <button class="btnSubmit" onclick="proximo(4)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="identacaoPadrao" style="width: 100%">
         <form
           id="contactForm"
           style="
@@ -166,6 +401,133 @@
     </main>
 
     <script>
+      var telefone = document.getElementById("whatsapp");
+      var maskOptions = {
+        mask: "(00) 00000-0000",
+      };
+      IMask(telefone, maskOptions);
+
+      function proximo(num) {
+        switch (num) {
+          case 1:
+            document.getElementById("Form1").style.display = "none";
+            document.getElementById("Form2").style.display = "block";
+            break;
+
+          case 2:
+            if (document.getElementById("chkTermos").checked) {
+              document.getElementById("Form2").style.display = "none";
+              document.getElementById("Form3").style.display = "block";
+            } else {
+              Swal.fire({
+                position: "top-end",
+                icon: "warning",
+                text: "Você precisa concordar com os Termos e Condições para prosseguir",
+                showConfirmButton: false,
+                timer: 5500,
+              });
+            }
+            break;
+
+          case 3:
+            validaDadosPessoais();
+            break;
+
+          case 4:
+            validaDadosDisponibilidade();
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      function anterior(num) {
+        switch (num) {
+          case 2:
+            document.getElementById("Form2").style.display = "none";
+            document.getElementById("Form1").style.display = "block";
+            break;
+
+          case 3:
+            document.getElementById("Form3").style.display = "none";
+            document.getElementById("Form2").style.display = "block";
+            break;
+
+          case 4:
+            document.getElementById("Form4").style.display = "none";
+            document.getElementById("Form3").style.display = "block";
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      function validaDadosPessoais() {
+        const name = document.getElementById("name").value;
+        const whatsapp = document.getElementById("whatsapp").value;
+        const cidadeEstado = document.getElementById("cidadeEstado").value;
+        const profissao = document.getElementById("profissao").value;
+        const chkEstabilidade =
+          document.getElementById("chkEstabilidade").checked;
+
+        // Expressão regular para validar telefone (aceita DDD e número com 9 dígitos)
+        const whatsappRegex = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/;
+
+        // Valida se todos os campos estão preenchidos
+        if (!name || !whatsapp || !cidadeEstado) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, preencha os três primeiros campos!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+
+        // Valida o formato do número de WhatsApp
+        if (!whatsappRegex.test(whatsapp)) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, insira um número de WhatsApp válido! Exemplo: (11) 91234-5678",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+
+        if (chkEstabilidade && !profissao) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, informe sua profissão!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+
+        document.getElementById("Form3").style.display = "none";
+        document.getElementById("Form4").style.display = "block";
+      }
+
+      function validaDadosDisponibilidade() {
+        const opiniaoSobre = document.getElementById("opiniaoSobre").value;
+        const opiniaoFamilia = document.getElementById("opiniaoFamilia").value;
+        const dispReuniao = document.querySelector(
+          'input[name="dispReuniao"]:checked'
+        ).value;
+        const dispVirtual = document.querySelector(
+          'input[name="dispVirtual"]:checked'
+        ).value;
+        const dispEstudos = document.querySelector(
+          'input[name="dispEstudos"]:checked'
+        ).value;
+      }
+
       document
         .getElementById("contactForm")
         .addEventListener("submit", async function (event) {

@@ -426,6 +426,14 @@ a:hover {
   cursor: pointer;
 }
 
+.radioBtn {
+  text-align: center;
+}
+
+.txtStart {
+  text-align: start;
+}
+
 @media (max-width: 1550px) {
   .tituloH2 {
     font-size: 2.2em !important;
