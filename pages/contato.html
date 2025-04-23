@@ -33,6 +33,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -80,9 +81,8 @@
     }
 
     .container {
-      max-width: 450px;
+      max-width: 800px;
       margin: auto;
-      /* margin-top: 40px; */
       background: white;
       padding: 20px;
       border-radius: 8px;
@@ -110,6 +110,12 @@
 
     .btnSubmit:hover {
       background: #2d4c9cd7;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        max-width: 450px;
+      }
     }
   </style>
 
@@ -140,7 +146,7 @@
         </nav>
       </header>
 
-      <!-- <section id="Form1" class="identacaoPadrao" style="width: 100%">
+      <section id="Form1" class="identacaoPadrao" style="width: 100%">
         <div style="position: absolute; top: 15%; left: 0; width: 100%">
           <div class="container">
             <h2 class="tituloH2 flexCenter txtAzul">
@@ -158,9 +164,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section
+      <section
         id="Form2"
         class="identacaoPadrao"
         style="width: 100%; display: none"
@@ -222,9 +228,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section
+      <section
         id="Form3"
         class="identacaoPadrao"
         style="width: 100%; display: none"
@@ -292,9 +298,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section
+      <section
         id="Form4"
         class="identacaoPadrao"
         style="width: 100%; display: none"
@@ -370,9 +376,156 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <section class="identacaoPadrao" style="width: 100%">
+      <section
+        id="Form5"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">Princípios e Valores</h2>
+
+            <div class="txtStart">
+              <span
+                >A Maçonaria acredita em um Princípio Criador. Você crê em
+                alguma forma de Deus ou força superior?</span
+              >
+              <br />
+              <label class="radioBtn">
+                <input type="radio" name="crerDeus" value="1" /> Sim
+              </label>
+              <label class="radioBtn">
+                <input type="radio" name="crerDeus" value="0" /> Não
+              </label>
+            </div>
+
+            <div class="txtStart" style="margin-top: 16px">
+              <span
+                >Você tem alguma convicção política ou religiosa que poderia
+                dificultar sua convivência pacífica com pessoas de opiniões
+                diferentes das suas?</span
+              >
+              <br />
+              <label class="radioBtn">
+                <input type="radio" name="difOpinioes" value="1" /> Sim
+              </label>
+              <label class="radioBtn">
+                <input type="radio" name="difOpinioes" value="0" /> Não
+              </label>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+              "
+            >
+              <button class="btnSubmit" onclick="anterior(5)">Anterior</button>
+              <button class="btnSubmit" onclick="proximo(5)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="Form6"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <h2 class="tituloH2 flexCenter txtAzul">
+              Conhecimento sobre a Maçonaria
+            </h2>
+
+            <div class="txtStart">
+              <span>O que você entende por Maçonaria?</span>
+              <textarea name="perg1" id="perg1"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span>Por que você deseja ingressar na Maçonaria?</span>
+              <textarea name="perg2" id="perg2"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Você acredita que a Maçonaria é uma instituição esotérica ou de
+                tradição mágica?</span
+              >
+              <textarea name="perg3" id="perg3"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Você acredita que a Maçonaria é apenas uma rede de contatos
+                profissionais ou para realização de caridades?
+              </span>
+              <textarea name="perg4" id="perg4"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Você está ciente de que a Maçonaria é uma escola de moral
+                baseada principalmente na Bíblia e lendas maçônicas?
+              </span>
+              <textarea name="perg5" id="perg5"></textarea>
+            </div>
+
+            <div class="txtStart">
+              <span
+                >Você leu algum dos artigos do nosso site? Se sim, qual? Qual
+                sua análise sobre?
+              </span>
+              <textarea name="perg6" id="perg6"></textarea>
+            </div>
+
+            <label style="display: flex; align-items: center; gap: 8px">
+              <input
+                id="chkDeclaracao"
+                style="max-width: 30px"
+                type="checkbox"
+                name="chkDeclaracao"
+              />
+              <span style="text-align: start"
+                >Declaro que todas as informações fornecidas são verdadeiras e
+                que compreendo os princípios da Maçonaria.
+              </span>
+            </label>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+              "
+            >
+              <button class="btnSubmit" onclick="anterior(6)">Anterior</button>
+              <button class="btnSubmit" onclick="proximo(6)">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="loader"
+        style="display: flex; position: absolute; right: 50%; top: 50%"
+      >
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_usmfx6bp.json"
+          background="transparent"
+          speed="1"
+          style="width: 100px; height: 100px"
+          loop
+          autoplay
+        >
+        </lottie-player>
+      </div>
+
+      <!-- <section class="identacaoPadrao" style="width: 100%">
         <form
           id="contactForm"
           style="
@@ -397,7 +550,7 @@
             <button class="btnSubmit" type="submit">Enviar Mensagem</button>
           </div>
         </form>
-      </section>
+      </section> -->
     </main>
 
     <script>
@@ -437,6 +590,14 @@
             validaDadosDisponibilidade();
             break;
 
+          case 5:
+            validaDadosPrincipiosValores();
+            break;
+
+          case 6:
+            validaDadosConhecimentoMaconaria();
+            break;
+
           default:
             break;
         }
@@ -457,6 +618,16 @@
           case 4:
             document.getElementById("Form4").style.display = "none";
             document.getElementById("Form3").style.display = "block";
+            break;
+
+          case 5:
+            document.getElementById("Form5").style.display = "none";
+            document.getElementById("Form4").style.display = "block";
+            break;
+
+          case 6:
+            document.getElementById("Form6").style.display = "none";
+            document.getElementById("Form5").style.display = "block";
             break;
 
           default:
@@ -517,17 +688,111 @@
       function validaDadosDisponibilidade() {
         const opiniaoSobre = document.getElementById("opiniaoSobre").value;
         const opiniaoFamilia = document.getElementById("opiniaoFamilia").value;
-        const dispReuniao = document.querySelector(
-          'input[name="dispReuniao"]:checked'
-        ).value;
-        const dispVirtual = document.querySelector(
-          'input[name="dispVirtual"]:checked'
-        ).value;
-        const dispEstudos = document.querySelector(
-          'input[name="dispEstudos"]:checked'
-        ).value;
+        const dispReuniao =
+          document.querySelector('input[name="dispReuniao"]:checked')?.value ||
+          "";
+        const dispVirtual =
+          document.querySelector('input[name="dispVirtual"]:checked')?.value ||
+          "";
+
+        const dispEstudos =
+          document.querySelector('input[name="dispEstudos"]:checked')?.value ||
+          "";
+
+        if (
+          !opiniaoSobre ||
+          !opiniaoFamilia ||
+          !dispReuniao ||
+          !dispVirtual ||
+          !dispEstudos
+        ) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, preencha todos os campos!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+        document.getElementById("Form4").style.display = "none";
+        document.getElementById("Form5").style.display = "block";
       }
 
+      function validaDadosPrincipiosValores() {
+        const crerDeus =
+          document.querySelector('input[name="crerDeus"]:checked')?.value || "";
+
+        const difOpinioes =
+          document.querySelector('input[name="difOpinioes"]:checked')?.value ||
+          "";
+
+        if (!crerDeus || !difOpinioes) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, preencha todos os campos!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+        document.getElementById("Form5").style.display = "none";
+        document.getElementById("Form6").style.display = "block";
+      }
+
+      async function validaDadosConhecimentoMaconaria() {
+        const perg1 = document.getElementById("perg1").value;
+        const perg2 = document.getElementById("perg2").value;
+        const perg3 = document.getElementById("perg3").value;
+        const perg4 = document.getElementById("perg4").value;
+        const perg5 = document.getElementById("perg5").value;
+        const perg6 = document.getElementById("perg6").value;
+
+        if (!perg1 || !perg2 || !perg3 || !perg4 || !perg5 || !perg6) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Por favor, preencha todos os campos!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+
+        if (!document.getElementById("chkDeclaracao").checked) {
+          Swal.fire({
+            position: "top-end",
+            icon: "warning",
+            text: "Obrigatório declarar que as informações fornecidas são verdadeiras!",
+            showConfirmButton: false,
+            timer: 9500,
+          });
+          return;
+        }
+
+        const data = { name, email, whatsapp, message };
+
+        try {
+          const response = await fetch(
+            "https://envioemailnodejs.onrender.com/send-email",
+            {
+              // URL do backend
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            }
+          );
+
+          const result = await response.json();
+          alert(result.message); // Exibe mensagem de sucesso ou erro
+          window.location.href = "../index.html";
+        } catch (error) {
+          alert("Erro ao enviar mensagem. Tente novamente.");
+        }
+      }
+
+      // OUTRO
       document
         .getElementById("contactForm")
         .addEventListener("submit", async function (event) {
