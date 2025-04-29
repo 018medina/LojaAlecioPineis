@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- PARA FUNCIONAMENTO DE ÍCONES -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Artigos - Loja Alécio Pineis nº7065 - Rito de York</title>
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+  </head>
+
+  <style>
+    .artigos a:hover {
+      background-color: #2d4c9c !important;
+    }
+
+    p a {
+      padding: 0;
+    }
+
+    #SecHome {
+      background-image: url(../img/graus.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 30dvh;
+      position: relative;
+      opacity: 0.98;
+    }
+
+    .tamCard {
+      max-width: 1000px;
+    }
+
+    @media (max-width: 768px) {
+      .tamCard {
+        max-width: 350px;
+      }
+    }
+  </style>
+
+  <body>
+    <main>
+      <header id="header">
+        <nav id="nav">
+          <button id="btn-mobile">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu">
+            <li>
+              <a href="../index.html" onclick="auxToggleMenu()"
+                >Página inicial</a
+              >
+            </li>
+            <li>
+              <a href="../pages/artigos.html" onclick="auxToggleMenu()"
+                >Artigos</a
+              >
+            </li>
+            <li>
+              <a href="../pages/sobre.html" onclick="auxToggleMenu()"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a href="../pages/contato.html" onclick="auxToggleMenu()"
+                >Fale Conosco</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="SecHome" class="identacaoPadrao" style="width: 100%">
+        <div class="overlay-top"></div>
+      </section>
+
+      <section id="SecMenuArtigos" class="padBottom padTop">
+        <div class="identaPad animaAparecer">
+          <h2 class="tituloH2 flexCenter txtAzul">
+            Fundação das Grandes Lojas de Londres e York
+          </h2>
+          <div class="flexStart" style="justify-content: center !important">
+            <!-- primeiro bloco -->
+            <div>
+              <div>
+                <h3>Autor: Vitor Marreira</h3>
+                <h3>Tempo de leitura: 12min</h3>
+                <p style="margin-top: 25px" class="tamCard txtJust">
+                  <strong>Fundação da Grande Loja de Londres Motivação:</strong>
+                  No ano de 1566, James VI (imagem ao lado), que era então o Rei
+                  da Escócia, consolidou uma importante união ao se tornar
+                  também o Rei da Inglaterra e da Irlanda, adotando o nome James
+                  I. Sua história na Maçonaria começou em 1601, quando foi
+                  iniciado na Maçonaria Escocesa, marcando assim o início da
+                  influência dos Stuarts na Fraternidade.
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 300px"
+                    src="../img/art2/1.jpg"
+                    alt="Imagem1"
+                  />
+                </div>
+                <p style="margin-top: 25px" class="tamCard txtJust">
+                  James I foi sucedido por Charles I, que se casou com uma
+                  francesa católica e procurou impor o catolicismo na
+                  Inglaterra. Esse período foi marcado por uma guerra civil que
+                  resultou na derrota de Charles e em sua execução, levando a
+                  Inglaterra a um período republicano liderado por Oliver
+                  Cromwell. O Príncipe Charles e a rainha se exilaram na França.
+                </p>
+                <p class="tamCard txtJust">
+                  Em 1660, após a morte de Cromwell, os Stuarts retornaram à
+                  Grã-Bretanha com Charles II como Rei, trabalhando para
+                  reconciliar as diferenças políticas e religiosas. Isso
+                  coincidiu com a reconstrução de Londres, liderada pelo notável
+                  maçom arquiteto Christopher Wren.
+                </p>
+                <p class="tamCard txtJust">
+                  Após a morte de Charles II, seu irmão, o Rei James II, assumiu
+                  o trono e tentou impor o catolicismo, tendo um filho chamado
+                  James Edward Stewart. Nesse período, a França enfrentava
+                  conflitos religiosos, onde os franceses eram forçados a se
+                  converterem ao catolicismo ou serem exilados.
+                </p>
+                <p class="tamCard txtJust">
+                  Diante dessa situação, os ingleses e escoceses consideraram
+                  inaceitável uma sucessão católica ao trono da Grã-Bretanha. O
+                  trono passou então para a filha de James II, Mary, e seu
+                  marido William, que não tiveram herdeiros. A sucessão
+                  continuou com a Rainha Anne, que também não deixou herdeiros.
+                  Chegara ao fim o reinado dos Stuarts na Grã- Bretanha.
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 300px; margin-bottom: 1rem"
+                    src="../img/art2/2.jpg"
+                    alt="Imagem2"
+                  />
+                </div>
+                <p class="tamCard txtJust">
+                  Muitos historiadores sugerem que a fundação da Primeira Grande
+                  Loja maçônica pode ter sido uma estratégia política para
+                  alinhar a Maçonaria com a nova dinastia alemã dos Hanover,
+                  sucedendo os Stuarts, se iniciando com George I. A ascensão
+                  deste trouxe inovações conhecidas como Modernas, antagonizando
+                  com a Maçonaria praticada pelos antigos. A inovação surgiu da
+                  queda do Grão-Mestre Christopher Wren, esse acontecimento
+                  deixou os Mestres Maçons em Londres muito desgostosos pois
+                  Wren sempre foi um grande exemplo para a Fraternidade,
+                  entretanto com sua elevada idade e enfermidades acabou
+                  negligenciando as Lojas, em especiais as festas anuais.
+                </p>
+                <p class="tamCard txtJust">
+                  Concluo que a motivação da Fundação da Grande Loja de Londres
+                  começou de fato com o exílio na França que só aceitariam
+                  católicos, os ingleses se viram obrigados a tomar uma atitude
+                  para que isso não chegasse na Inglaterra, posteriormente,
+                  vimos os Protestantes de Hanover ascenderem no trono,
+                  alterando também a Maçonaria e trazendo inovações antagônicas
+                  aos Antigos.
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 300px; margin-bottom: 1rem"
+                    src="../img/art2/3.png"
+                    alt="Imagem3"
+                  />
+                </div>
+                <p class="tamCard txtJust">
+                  <strong>Data de fundação:</strong> A investigação da história
+                  progride frequentemente com historiadores contestando e até
+                  duvidando de muitas escritas que antes eram tidas como
+                  verdadeiras. Há o exemplo da biografia do Rei Alfred, feita
+                  por um monge chamado Asser, que já foi considerada
+                  falsificada. Posteriormente, respondeu-se a essa alegação com
+                  evidências de que era genuína, apenas para outro historiador
+                  mais tarde argumentar que era falsa.
+                </p>
+                <p class="tamCard txtJust">
+                  Nesse mesmo espírito crítico, Andrew Prescott e Suan Mitchell
+                  Sommers aprofundaram seus estudos sobre a fundação da Grande
+                  Loja de Londres em 1717 ou 1721. Em seu estudo, eles
+                  enfatizaram que qualquer conclusão tirada deve permanecer
+                  sujeita a ser contestada no futuro, à medida que novas
+                  evidências surgirem.
+                </p>
+                <p class="tamCard txtJust">
+                  A contestação da fundação dessa Grande Loja já foi levantada
+                  anteriormente em 1887 por Henry Sadler, que argumentou que era
+                  necessário algo mais confiável do que a simples declaração de
+                  Anderson para convencê-lo de que as quatro Lojas que
+                  supostamente formaram a Grande Loja eram as únicas Lojas em
+                  Londres naquela época. Há mais de cem anos, tanto Gould quanto
+                  Robbins apontaram como partes da história de Anderson sobre os
+                  primeiros anos da Grande Loja são contraditórias com relatos
+                  de jornais contemporâneos.
+                </p>
+                <p class="tamCard txtJust">
+                  A história da fundação em 1717 não foi mencionada na primeira
+                  edição da Constituição de James Anderson de 1723; ela só
+                  surgiu em uma nova edição de 1738. Relatórios de imprensa e
+                  panfletos sobre a Maçonaria na Inglaterra entre 1721 e 1738
+                  não mencionaram nada sobre a história de 1717 ou "O Ganso e a
+                  Grelha". Somente Anderson escreveu sobre a Posse de Antony
+                  Sayer como Grão-Mestre, 21 anos depois. Muitas das referências
+                  de Anderson a pessoas e lugares estão repletas de
+                  inconsistências, divergindo de relatos contemporâneos da
+                  imprensa na época.
+                </p>
+                <p class="tamCard txtJust">
+                  Um trecho específico da publicação de Prescott e Sommers nos
+                  faz refletir: "No final das contas, isso importa? Afinal,
+                  estamos discutindo apenas cerca de quatro anos. Que diferença
+                  faz se dissermos 1717 ou 1721? Em si, não é grande coisa, mas
+                  o ponto importante é que, ao investigar essas questões,
+                  estamos melhorando nossa compreensão." Como Maçons, nossa
+                  busca deve ser por uma compreensão aprimorada, em vez de
+                  simplesmente repetir cegamente o que foi dito há 300 anos, não
+                  é mesmo?
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 300px; margin-bottom: 1rem"
+                    src="../img/art2/4.jpg"
+                    alt="Imagem4"
+                  />
+                </div>
+                <p class="tamCard txtJust">
+                  <strong>A Origem da Grande Loja de York Lendas:</strong>
+                  Segundo as lendas encontradas em manuscritos, a maçonaria
+                  teria seu início ao norte da Inglaterra, na cidade de York,
+                  onde segundo os contos, teriam se formado as primeiras guildas
+                  de pedreiros por volta do ano de 600d.c. É importante notar
+                  que na idade média era comum as corporações de ofício
+                  possuírem origens que enaltecessem grandeza e nobreza. E a
+                  lenda de York, não foi diferente. Segundo o manuscrito de
+                  Cooke de 1583, "Houve um importante rei da Inglaterra chamado
+                  Athelstan, e seu filho mais novo amava a Ciência da Geometria.
+                  Ele sabia que a arte manual do Ofício praticava a ciência da
+                  Geometria como os Maçons, e por isso os reuniu em Conselho e
+                  adotou a prática desta ciência na especulação, porque na
+                  especulação era mestre e amava a Maçonaria e os maçons. Ele
+                  mesmo se fez Maçom e lhes deu cargos e nomes que ainda estão
+                  em uso na Inglaterra e em outros países." O príncipe Edwin
+                  citado acima, teria concedido uma carta constitutiva (926
+                  d.c), em uma assembleia de maçons na cidade de York, com o
+                  objetivo de fundar a primeira grande Loja de maçons e
+                  tornando-se o primeiro Grão-Mestre.
+                </p>
+                <p class="tamCard txtJust">
+                  <strong>Historiografia oficial da Inglaterra:</strong> Existe
+                  uma notável incompatibilidade entre as lendas e os documentos
+                  da historiografia oficial da Inglaterra em relação à época
+                  mencionada, por volta do ano de 866 d.C. Nesse período, a
+                  cidade de York estava sendo dominada por Vikings, o que a
+                  transformou em um importante centro comercial e um vital porto
+                  fluvial. Os Vikings, provenientes das extensas rotas de
+                  comércio do norte da Europa, estabeleceram-se firmemente na
+                  região, controlando não apenas a cidade de York, mas também
+                  vastas partes da Inglaterra.
+                </p>
+                <p class="tamCard txtJust">
+                  Esse domínio viking sobre York e áreas circundantes perdurou
+                  por quase cem anos, até chegar ao seu fim no ano de 954 d.C.
+                  Foi somente quando o rei Eadred, em seus esforços para
+                  unificar os territórios ingleses sob um único reino, obteve
+                  sucesso. A unificação da Inglaterra marcou um ponto crucial na
+                  história do país, representando o término do domínio viking e
+                  o fortalecimento da autoridade central do rei sobre o
+                  território.
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 300px; margin-bottom: 1rem"
+                    src="../img/art2/5.jpg"
+                    alt="Imagem5"
+                  />
+                </div>
+                <p class="tamCard txtJust">
+                  Desde sua origem, as lojas maçônicas eram conhecidas por sua
+                  autonomia e independência, operando sob o lema de serem
+                  "maçons livres em lojas livres". No entanto, um ponto de
+                  viragem fundamental ocorreu em 1721 com o estabelecimento da
+                  Grande Loja de Londres e Westminster. Esta Grande Loja central
+                  representou uma mudança significativa na estrutura das lojas
+                  maçônicas, uma vez que algumas delas optaram por se subordinar
+                  a essa autoridade central, enquanto outras permaneceram
+                  firmemente comprometidas com sua autonomia.
+                </p>
+                <p class="tamCard txtJust">
+                  A Grande Loja de Londres e Westminster desempenhou um papel
+                  crucial na padronização dos rituais e práticas maçônicas,
+                  criando uma base uniforme para os maçons em toda a Inglaterra.
+                  Essa centralização do poder atraiu algumas lojas que buscavam
+                  uma maior organização e coesão na Maçonaria.
+                </p>
+                <p class="tamCard txtJust">
+                  No entanto, houve resistência a essa mudança por parte de
+                  algumas lojas. Um exemplo notável é a antiga Loja do condado
+                  de York, que se opôs tanto à centralização do poder quanto às
+                  mudanças impostas pela Grande Loja de Londres e Westminster.
+                  Essas lojas que resistiram à autoridade central continuaram a
+                  operar de acordo com suas tradições locais e rituais
+                  específicos.
+                </p>
+                <p class="tamCard txtJust">
+                  Em resposta à crescente tensão entre as lojas que aderiram à
+                  Grande Loja de Londres e Westminster e as que permaneceram
+                  independentes, os maçons da cidade de York fundaram sua
+                  própria Grande Loja em 1725. Esta nova Grande Loja se
+                  autoproclamou a "Grande Loja da Inglaterra", enfatizando sua
+                  independência em relação à Grande Loja de Londres e
+                  Westminster. No entanto, a Grande Loja da Inglaterra cessou
+                  suas atividades no ano de 1740, contribuindo para um período
+                  de complexas dinâmicas e rivalidades dentro da Maçonaria
+                  inglesa.
+                </p>
+                <p class="tamCard txtJust">
+                  No ano de 1751, maçons Irlandeses, que também estavam
+                  descontentes com a Grande Loja de Londres, fundaram a “Grande
+                  Loja da Inglaterra de acordo com as Antigas instituições”, que
+                  também ficou conhecida como “Grande Loja dos Antigos”. Essa
+                  Grande Loja também era intitulada de “Grande Loja de Atholl”,
+                  pelo fato dos Duques de Atholl a governarem. Por conta da
+                  rivalidade existente entre as duas Grandes Lojas, a Grande
+                  Loja de Londres foi apelidada pejorativamente de “Loja dos
+                  Modernos”, culpando-os de terem alterado as antigas tradições,
+                  enquanto os “antigos” procuravam praticar a forma mais pura de
+                  maçonaria.
+                </p>
+                <p class="tamCard txtJust">
+                  Em 1756, Lawrence Dermott, Que na época era secretário da
+                  Grande Loja dos Antigos, publicou a obra “Ahiman Rezon”, a
+                  constituição dos maçons Antigos, nessa obra ele incita que
+                  eles deveriam se intitular “maçons de York”, por estarem
+                  preservando as antigas tradições da primeira Grande Loja da
+                  Inglaterra, que foi reunida em York, pelo príncipe Edwin no
+                  ano de 926 d.c.
+                </p>
+                <p class="tamCard txtJust">
+                  Em 1761, a Grande Loja de York foi reativada mantendo sua
+                  linhagem mais tradicionalista e à preservação de rituais e
+                  práticas maçônicas mais antigas. Mantendo assim, sua
+                  rivalidade com os “modernos” que preservaram a ideologia de
+                  padronização de rituais e modernização deles.
+                </p>
+                <div class="flexCenter">
+                  <img
+                    style="max-width: 100%; margin-bottom: 1rem"
+                    src="../img/art2/6.jpg"
+                    alt="Imagem6"
+                  />
+                </div>
+                <p class="tamCard txtJust">
+                  <strong>Grande Loja Unida da Inglaterra:</strong> Em 1809, os
+                  Modernos designaram uma "Loja de Promulgação" com o propósito
+                  de alinhar seus rituais com os praticados na Escócia, na
+                  Irlanda e, de maneira especial, pelos Antigos. Em 1811, ambas
+                  as Grandes Lojas nomearam Comissários, e nos dois anos
+                  seguintes, negociaram e concordaram com os termos da união. Em
+                  janeiro de 1813, o Duque de Sussex assumiu o cargo de
+                  Grão-Mestre dos Modernos, sucedendo seu irmão, o Príncipe
+                  Regente, enquanto em dezembro do mesmo ano, outro irmão, o
+                  Duque de Kent, tornou-se Grão-Mestre dos Antigos. Em 27 de
+                  dezembro de 1813, a Grande Loja Unida da Inglaterra (UGLE) foi
+                  oficialmente estabelecida no Salão dos Maçons, em Londres, com
+                  o Duque de Sussex, o filho mais novo do Rei George III, como
+                  Grão-Mestre. Adicionalmente, uma Loja de Reconciliação foi
+                  criada com o propósito de harmonizar os rituais praticados
+                  pelas duas antigas Grandes Lojas.
+                </p>
+
+                <p class="tamCard txtJust"><strong>Referências:</strong></p>
+                <p class="tamCard txtJust">
+                  DERMOTT, Laurence. AHIMAN REZON: A Constituição dos Maçons
+                  Antigos. Traduziada e Comentada por Kennyo Ismail. Editora
+                  Maçônica "A TROLHA" Ltda, 2016.
+                </p>
+                <p class="tamCard txtJust">
+                  MACHADO JUNIOR, Izautonio da Silva. INTRODUÇÃO AO RITO DE
+                  YORK: As Blue Lodges. 1ª edição, Brasília, DF. Editora “No
+                  Esquadro”, 2023.
+                </p>
+                <p class="tamCard txtJust">
+                  PRESTON, William. Esclarecimentos sobre Maçonaria. Editora
+                  ARCANUM. 1772.
+                </p>
+                <p class="tamCard txtJust">
+                  COOKE, Matthew. Manuscrito de Cooke, 1861.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  PRESCOTT, Andrew; MITCHELL SOMMERS, Susan. 1717 and All That.
+                  Circulation Paper – Not for Republication. Disponível em:
+                  <a
+                    href="https://www.quatuorcoronati.com/wp-
+                    content/uploads/2018/01/1717-And-All-That-Prescott-Sommers.pdf"
+                    target="_blank"
+                    >https://www.quatuorcoronati.com/wp-
+                    content/uploads/2018/01/1717-And-All-That-Prescott-Sommers.pdf</a
+                  >. Acesso em: 15 de set. de 2023.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  TEIXEIRA, Fabiane. Viagens e Vivências, 2019. Conheça York:
+                  uma cidade medieval com herança Viking na Inglaterra.
+                  Disponível em:
+                  <a
+                    href="https://www.viagensevivencias.com.br/2019/04/york-inglaterra.html"
+                    target="_blank"
+                    >https://www.viagensevivencias.com.br/2019/04/york-inglaterra.html</a
+                  >. Acesso em 15 de set. de 2023.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  FREEMASON. Breve histórico da fundação da Grande Loja Unida de
+                  Inglaterra, 2019. Disponível em:
+                  <a
+                    href="https://www.freemason.pt/breve-historico-da-fundacao-da-grande-
+                    loja-unida-de-inglaterra"
+                    target="_blank"
+                    >https://www.freemason.pt/breve-historico-da-fundacao-da-grande-
+                    loja-unida-de-inglaterra</a
+                  >. Acesso em 15 de set. de 2023.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  LOJA BRASÍLIA. A Grande Loja Unida da Inglaterra. Disponível
+                  em:
+                  <a
+                    href="https://www.lojabrasilia.com.br/a-grande-loja-unida-da-inglaterra"
+                    target="_blank"
+                    >https://www.lojabrasilia.com.br/a-grande-loja-unida-da-inglaterra</a
+                  >. Acesso em 15 de set. de 2023.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  BERESINER, Yasha. Masonic Education: Lodges of Instruction.
+                  Disponível em:
+                  <a
+                    href="http://www.freemasons-freemasonry.com/beresiner1.html"
+                    target="_blank"
+                    >http://www.freemasons-freemasonry.com/beresiner1.html</a
+                  >. Acesso em 15 de set. de 2023.
+                </p>
+                <p class="tamCard txtJust artigos">
+                  UGLE. History of Freemasonry. United Grand Lodge of England,
+                  2023. Disponível em:
+                  <a
+                    href="https://www.ugle.org.uk/discover-freemasonry/history-freemasonry"
+                    target="_blank"
+                    >https://www.ugle.org.uk/discover-freemasonry/history-freemasonry</a
+                  >. Acesso em: 11 de set. de 2023.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="background-color: #2d4c9c">
+      <div class="ajustaRodape">
+        <div>
+          <p
+            style="
+              text-align: center;
+              margin: 0;
+              color: white;
+              font-size: 0.8em;
+            "
+          >
+            © Loja Alécio Pineis. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0; font-size: 0.8em">
+            <a
+              class="ajustaRodape aLinksFooter"
+              style="text-decoration: none; gap: 20px"
+              href="https://fabiomedina.com.br/"
+              target="_blank"
+              >Desenvolvido por: Fábio Medina
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js" type="text/javascript"></script>
+    <script src="../scroll.js" type="text/javascript"></script>
+  </body>
+</html>
