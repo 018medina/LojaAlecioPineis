@@ -806,8 +806,6 @@
           chkDeclaracao,
         };
 
-        console.log("data = " + data);
-
         document.getElementById("Form6").style.display = "none";
         document.getElementById("loader").style.display = "flex";
 
@@ -822,7 +820,7 @@
             }
           );
 
-          // const result = await response.json();
+          const result = await response.json();
           alert(result.message); // Exibe mensagem de sucesso ou erro
           document.getElementById("loader").style.display = "none";
           window.location.href = "../index.html";
