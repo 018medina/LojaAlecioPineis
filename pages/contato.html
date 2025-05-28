@@ -51,21 +51,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- FAVICON -->
-    <!-- <link
-      rel="icon"
-      type="image/png"
-      href="../favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="shortcut icon" href="../favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../apple-touch-icon.png"
-    />
-    <link rel="manifest" href="../site.webmanifest" /> -->
-    <!-- FAVICON -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- Favicon PNG (fallback para navegadores que preferem PNG) -->
@@ -130,8 +115,6 @@
     }
   </style>
 
-  <script></script>
-
   <body>
     <main>
       <header id="header" style="background-color: #2d4c9c">
@@ -157,7 +140,93 @@
         </nav>
       </header>
 
-      <section id="Form1" class="identacaoPadrao" style="width: 100%">
+      <section id="FormImg1" class="identacaoPadrao" style="width: 100%">
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <img
+              style="margin-bottom: 20px"
+              src="../img/contato/1.jpeg"
+              alt="Explicação maçonaria"
+            />
+            <div style="display: flex; justify-content: end">
+              <button class="btnSubmit" onclick="proximoImg(1)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="FormImg2"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <img
+              style="margin-bottom: 20px"
+              src="../img/contato/2.jpeg"
+              alt="Explicação maçonaria"
+            />
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anteriorImg(2)">
+                Anterior
+              </button>
+              <button class="btnSubmit" onclick="proximoImg(2)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="FormImg3"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <img
+              style="margin-bottom: 20px"
+              src="../img/contato/3.jpeg"
+              alt="Explicação maçonaria"
+            />
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anteriorImg(3)">
+                Anterior
+              </button>
+              <button class="btnSubmit" onclick="proximoImg(3)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="FormImg4"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
+        <div style="position: absolute; top: 15%; left: 0; width: 100%">
+          <div class="container">
+            <img
+              style="margin-bottom: 20px"
+              src="../img/contato/4.jpeg"
+              alt="Explicação maçonaria"
+            />
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anteriorImg(4)">
+                Anterior
+              </button>
+              <button class="btnSubmit" onclick="proximoImg(4)">Próximo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIOS -->
+      <section
+        id="Form1"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
         <div style="position: absolute; top: 15%; left: 0; width: 100%">
           <div class="container">
             <h2 class="tituloH2 flexCenter txtAzul">
@@ -170,7 +239,8 @@
               primeiramente refletir sobre seus valores, comportamentos e
               compatibilidade com os princípios maçônicos.
             </p>
-            <div style="display: flex; justify-content: end">
+            <div style="display: flex; justify-content: space-between">
+              <button class="btnSubmit" onclick="anterior(1)">Anterior</button>
               <button class="btnSubmit" onclick="proximo(1)">Próximo</button>
             </div>
           </div>
@@ -530,6 +600,49 @@
     </main>
 
     <script>
+      function proximoImg(num) {
+        switch (num) {
+          case 1:
+            document.getElementById("FormImg1").style.display = "none";
+            document.getElementById("FormImg2").style.display = "block";
+            break;
+
+          case 2:
+            document.getElementById("FormImg2").style.display = "none";
+            document.getElementById("FormImg3").style.display = "block";
+            break;
+
+          case 3:
+            document.getElementById("FormImg3").style.display = "none";
+            document.getElementById("FormImg4").style.display = "block";
+            break;
+
+          case 4:
+            document.getElementById("FormImg4").style.display = "none";
+            document.getElementById("Form1").style.display = "block";
+            break;
+        }
+      }
+
+      function anteriorImg(num) {
+        switch (num) {
+          case 2:
+            document.getElementById("FormImg2").style.display = "none";
+            document.getElementById("FormImg1").style.display = "block";
+            break;
+
+          case 3:
+            document.getElementById("FormImg3").style.display = "none";
+            document.getElementById("FormImg2").style.display = "block";
+            break;
+
+          case 4:
+            document.getElementById("FormImg4").style.display = "none";
+            document.getElementById("FormImg3").style.display = "block";
+            break;
+        }
+      }
+
       var telefone = document.getElementById("whatsapp");
       var maskOptions = {
         mask: "(00) 00000-0000",
@@ -581,6 +694,11 @@
 
       function anterior(num) {
         switch (num) {
+          case 1:
+            document.getElementById("Form1").style.display = "none";
+            document.getElementById("FormImg4").style.display = "block";
+            break;
+
           case 2:
             document.getElementById("Form2").style.display = "none";
             document.getElementById("Form1").style.display = "block";
