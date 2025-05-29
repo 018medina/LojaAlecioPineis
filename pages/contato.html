@@ -136,11 +136,20 @@
                 >Artigos</a
               >
             </li>
+            <li>
+              <a href="../pages/faleConosco.html" onclick="auxToggleMenu()"
+                >Fale Conosco</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <section id="FormImg1" class="identacaoPadrao" style="width: 100%">
+      <section
+        id="FormImg1"
+        class="identacaoPadrao"
+        style="width: 100%; display: none"
+      >
         <div style="position: absolute; top: 15%; left: 0; width: 100%">
           <div class="container">
             <img
@@ -600,6 +609,34 @@
     </main>
 
     <script>
+      $(document).ready(function () {
+        const swalWithBootstrapButtons = Swal.mixin({
+          customClass: {
+            confirmButton: "btn btn-success",
+            cancelButton: "btn btn-danger",
+          },
+          buttonsStyling: false,
+        });
+        swalWithBootstrapButtons
+          .fire({
+            title:
+              "Leia as imagens com atenção e depois preencha o formulário, se desejar prosseguir",
+            text: "Escolha abaixo",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Prosseguir",
+            cancelButtonText: "Voltar",
+            reverseButtons: true,
+          })
+          .then((result) => {
+            if (result.isConfirmed) {
+              document.getElementById("FormImg1").style.display = "block";
+            } else {
+              window.location.href = "/";
+            }
+          });
+      });
+
       function proximoImg(num) {
         switch (num) {
           case 1:
