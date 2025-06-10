@@ -153,6 +153,7 @@
         <div style="position: absolute; top: 15%; left: 0; width: 100%">
           <div class="container">
             <img
+              id="imgDinamica1"
               style="margin-bottom: 20px"
               src="../img/contato/1.jpeg"
               alt="Explicação maçonaria"
@@ -172,6 +173,7 @@
         <div style="position: absolute; top: 15%; left: 0; width: 100%">
           <div class="container">
             <img
+              id="imgDinamica2"
               style="margin-bottom: 20px"
               src="../img/contato/2.jpeg"
               alt="Explicação maçonaria"
@@ -635,6 +637,14 @@
               window.location.href = "/";
             }
           });
+
+        if (window.innerWidth <= 768) {
+          document.getElementById("imgDinamica1").src =
+            "../img/contato/1Cel.jpeg";
+
+          document.getElementById("imgDinamica2").src =
+            "../img/contato/2Cel.jpeg";
+        }
       });
 
       function proximoImg(num) {
