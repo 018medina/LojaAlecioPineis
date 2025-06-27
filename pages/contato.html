@@ -34,6 +34,10 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
     <!-- BOOTSTRAP JS -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -271,16 +275,16 @@
             <p
               style="text-align: justify; margin-top: 30px; margin-bottom: 30px"
             >
-              Ao preencher esse formulário e enviar seus dados, você concorda
+              Ao preencher este formulário e enviar seus dados, você concorda
               com a política de privacidade do site e consente com o tratamento
               de seus dados pessoais para fins exclusivamente cadastrais,
-              análise de perfil, seleção e habilitação junto a instituição.
+              análise de perfil, seleção e habilitação junto à instituição.
             </p>
             <p
               style="text-align: justify; margin-top: 30px; margin-bottom: 30px"
             >
               Seus dados permanecerão armazenados o tempo suficiente para a
-              finalidade acima descrita, podendo ser compartilhada ou não com
+              finalidade acima descrita, podendo ser compartilhados ou não com
               outras lojas maçônicas, seguindo protocolos de segurança da
               informação e para o mesmo fim.
             </p>
@@ -598,17 +602,21 @@
 
       <div
         id="loader"
-        style="display: none; position: absolute; right: 50%; top: 50%"
+        style="
+          display: none;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30vh;
+        "
       >
-        <lottie-player
-          src="https://assets1.lottiefiles.com/packages/lf20_usmfx6bp.json"
+        <dotlottie-player
+          src="https://lottie.host/1b95446d-b736-454d-bc17-fa7036a9efdf/Kbk2vCL1vT.json"
           background="transparent"
           speed="1"
-          style="width: 100px; height: 100px"
+          style="width: 300px; height: 300px"
           loop
           autoplay
-        >
-        </lottie-player>
+        ></dotlottie-player>
       </div>
     </main>
 
